@@ -62,11 +62,8 @@ export const addTask = (evento) => {
             taskContent.appendChild(check);
             taskContent.appendChild(titleTask);
     // task.innerHTML = content;
-    const dateElement = document.createElement("span");
-            dateElement.innerHTML = dateFormat;
-            console.log(dateElement);
+    
             task.appendChild(taskContent);
-            task.appendChild(dateElement);
             task.appendChild(deleteIcon(id));
     return task;
   };
